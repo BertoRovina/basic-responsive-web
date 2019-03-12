@@ -1,0 +1,145 @@
+<!-- Author: Humberto Luiz Rovina -->
+<!-- Last update date: 12/05/2017 -->
+<!-- Update: 
+				- First version
+ -->
+
+<!DOCTYPE html>
+<html lang="en"> <!-- Page language standard request -->
+	<head>
+		<title>JHN Travel Managers | Let us choose </title>  <!--Google uses on search Engine-->
+		<meta charset="UTF-8"> <!-- caracter set asked by the standard (most common is UTF-8) -->
+
+		<!-- FavIcon  -->
+		<link rel="icon" type="image/png" href="img/JHNTravel-Logo.png">
+		
+		<!-- Css import -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Adding Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<header id="header">
+			<img id="secondary-logo" src="img/jHNLogoSimple.png">
+			<img id="secondary-header" src="img/viena-header.jpg" alt="Eiffel Tower">
+		</header><!-- /header -->
+		<main>
+			<h2>...</h2>
+			<h2 id="let-us-choose">Please, fill up this form so we can know you better.</h2>
+
+			<form id="let-us-choose-form" action="let-us-choose_submit" method="get" accept-charset="utf-8">
+
+				<!-- Traveller personal data -->
+				<fieldset id="personal-info">
+					<legend>Personal information</legend>
+					<!-- First name -->
+					<label for="first-name" class="first-name name">First Name</label>
+					 <input id="first-name" class="name" type="text" id="fname" name="firstname" placeholder="Your first name..">
+					<!-- last name -->
+					 <label for="last-name" class="last-name name">Last Name</label>
+					 <input id="last-name" class="name" type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<!-- Traveller e-mail -->
+					 <label for="email">E-mail</label>
+					 <input id="email" class="name" type="email" id="email" name="email" placeholder="example@mail.com"><br>
+
+					<label for="country">Your country</label><br>
+				    <select id="country" name="country">
+						<option value="thailand">Thailand</option>
+						<option value="canada">Canada</option>
+						<option value="brazil">Brazil</option>
+						<option value="colombia">Colombia</option>
+						<option value="germany">Germany</option>
+						<option value="australia">Australia</option>
+				    </select><br>
+				    <label for="age">Your age</label><br>
+					<select id="age" name="age">
+						<option value="17">17-</option>
+						<option value="19">18-20</option>
+						<option value="30">21-40</option>
+						<option value="50">41-60</option>
+						<option value="65">65+</option>
+					</select>
+				</fieldset>
+				
+				<!-- Travel parameters -->
+				<fieldset id="travelDesires">
+					<legend>Travelling desires</legend><br>
+
+					<!-- Definition whether internation -->
+					<label class="international">Inside or outside home</label><br>
+					<div class="inHouseOpt">
+						<label class="inHouseOpt">Surprise me</label>
+						<input class="inHouseOpt" value="any" onclick="DestinyNat(this.value)" type="radio" name="intAny">
+						<label class="inHouseOpt">International</label>
+						<input class="inHouseOpt" value="internation" onclick="DestinyNat(this.value)" type="radio" name="intAny">
+						<label class="inHouseOpt">National</label>
+						<input class="inHouseOpt" value="national" onclick="DestinyNat(this.value)" type="radio" name="intAny">
+					</div>
+					<br>
+
+					<!-- Major objective of the travel -->
+					<label class="">Major objectives of your trip</label><br>
+					<div class="travelFun">
+						<label class="travelFun">Parties</label>
+						<input class="travelFun"  value="parties" onclick="TripObjective(this.value)" type="checkbox" name="parties">
+						<label class="travelFun">Adventures</label>
+						<input class="travelFun" value="adventures" onclick="TripObjective(this.value)" type="checkbox" name="adventures">
+						<label class="travelFun">Chilling</label>
+						<input class="travelFun" value="chilling" onclick="TripObjective(this.value)" type="checkbox" name="chilling">
+						<label class="travelFun">Beaches</label>
+						<input class="travelFun" value="beach" onclick="TripObjective(this.value)" type="checkbox">
+						<label class="travelFun">Monuments/Museums</label>
+						<input class="travelFun" value="museum" onclick="TripObjective(this.value)" type="checkbox" name="museums">
+					</div><br>
+					
+					<!-- Definition whether international -->
+					<label class="definedDate">Do already have a date</label><br>
+					<select id="dateDefinition" class="definedDate" name="age">
+						<option value="no">no</option>
+						<option value="yes">yes</option>
+					</select>
+					<br>
+
+					<!-- Trip exact dates -->
+					<div id="dateEntry" class="hide"> 
+						<label class="startDate " for="startDate">Start Date</label>
+						<input class="startDate" type="date" id="startDate" placeholder="dd/mm/yyyy">
+						<label class="endDate" for="endDate">End Date</label>
+						<input class="endDate" type="date" id="endDate" placeholder="dd/mm/yyyy">
+					</div>
+					
+					<!-- Trip time -->
+					<div id="dateDuration"> <!-- class 'date' must be added -->
+						<label class="duration" for="duration">Type how many days you want it to last</label><br>
+						<input class="duration" type="number" id="duration" placeholder="20">
+					</div>
+
+					<!-- Traveller budget -->
+					<div id="moneySpent"> 
+						<label class="budget" for="budget">How much money are you willing to spend</label><br>
+						<input class="duration" type="number" id="budget" placeholder="5,000.00">
+					</div>
+					<br>
+				</fieldset>
+
+				<button class="button-pattern">
+					<a href="#chosenDestiny">Discover your next destiny</a>
+				</button>
+				
+				<input class="reset-btn" type="reset" name="reset-btn">
+			</form>
+
+			<!-- Chosen Trip -->
+			<section id="chosenDestiny" class="hide">
+				<h2>...</h2>
+				<h2>The best destiny for you is...</h2>
+				<h3>Rio de Janeiro - BR</h3>
+				<img src="img/RioDeJaneiro.jpg" style="width: 100%">
+				<button id="redirection" class="redirectionBtn button-pattern">Start Planning</button>
+			</section>
+		</main>
+	</body>
+	<script src="js/let-us-choose-script.js"></script>
+</html>

@@ -1,0 +1,529 @@
+/* Author: Humberto Luiz Rovina */
+/* Last update date: 12/20/2017 */
+/* Update: 
+				- Contact form adapted for validation
+				- contact us Design update
+*/
+
+.hide{
+	display: none;
+}
+
+/*Eliminate margins in body*/
+body,
+html{
+	margin: 0%;
+	padding: 0%;
+}
+
+/*Eliminate margins in header*/
+body header{
+	margin: 0%;
+	padding: 0%;
+}
+
+/* Keeps mobile navigation bar hidden for desktops */
+.mobileNav{
+	display: none;
+}
+
+.icon-bar {
+   background-color:#FF0000;
+}
+
+.row .thumbnail {
+    border:0;
+    transition: .3s;
+}
+
+.row .thumbnail:hover {
+    box-shadow: 2px 3px 30px #888888;
+}
+
+/* Customize h1 font */
+h1{
+	font: 35px arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin: 0%;
+}
+
+/* Customize h2 font */
+h2{
+	font: 20px arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	color: #8c8e91;
+}
+
+h3{
+	font: 15px arial, sans-serif;
+	/*font-weight: bold;*/
+	text-align: center;
+	margin: 0;
+	color: #8c8e91;
+}
+
+/* Customize p font */
+p{
+	font: 20px arial, sans-serif;
+	padding: 2.5%;
+	text-align: justify;
+	text-indent: 2%;
+}
+
+#galleryCenter{
+	margin-left: 25%;
+}
+
+/* Set margin and gallery format */
+div.tryGallery  {
+    margin: 2% 8.5% 0% 8.5%;
+}
+
+div.tryGallery img {
+    width: 70%;
+    height: auto;
+}
+
+/* Button pattern style*/
+button{
+	color: #404142;
+	cursor: pointer;
+	font-size: 30px;
+	font: 30px arial, sans-serif;
+	border: none;
+	background:none;
+	font-weight: bold;
+}
+
+.button-pattern{
+	background-color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    width: auto;
+    margin: 0;
+	border: 2px solid darkgrey;
+	transition-duration: .5s;
+}
+
+.button-pattern:hover{
+	background-color: lightgreen;
+	border: 2px solid darkgreen;
+    color: darkgreen;
+}
+
+.button-pattern a{
+	text-decoration: none;
+	color: darkgreen;
+}
+
+.button-pattern a:hover{
+	text-decoration: none;
+
+}
+
+.reset-btn{
+	background-color: #d86c6c;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    width: auto;
+    margin: 0% 0% 0% 59%;
+	border: 2px solid darkgrey;
+	transition-duration: .5s;
+}
+
+.reset-btn:hover{
+	background-color: #b71616;
+	border: 2px solid darkred;
+    color: white;
+}
+
+/* section title */
+.sectionTitle{
+	padding-top: 1%;
+}
+
+#secondary-header{
+	width: 100%;
+}
+
+/* Top header image size */
+#backHeader{
+	width: 100%;
+	float: left;
+}
+
+/* Logo image positioning and size */
+#logo{
+	position: absolute;
+	width: 20%;
+	margin: 0.5% 40% 2.5% 40%;
+	float: left;
+}
+
+/* Top header buttons position and style*/
+#tableHeader{
+	width: 60%;
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 29%;
+	font-size: 24px;
+	text-align: center;
+}
+
+#homeButton:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#ourTipsButton:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#aboutButton:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+
+/* Pallarax effect 1 */
+.parallax1{
+	height: 100vh;
+	width: 100%;
+	background-image: url("Thailand.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Pallarax effect 2 */
+.parallax2{
+	height: 100vh;
+	width: 100%;
+	background-image: url("parallax1.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* contact form style */
+.contactForm {
+    border-radius: 5px;
+    background-color: #b5b6b7;
+    padding: 20px;
+    margin: 5% 15% 5% 15%;
+}
+
+/* Form select input style */
+
+.contact-gender > label{
+	margin-right: 5%;
+}
+
+#contact-phone-method > label{
+	margin-right: 5%;
+}
+
+/* Set the spaces to fit better on the screen */
+#destinies{
+	padding: 0% 10% 1% 10%;
+}
+
+/* Try it out button style and effect */
+.personalTip{
+	background-color: white;
+    padding: 12px 20px;
+    color: darkgrey;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    width: auto;
+    margin: 0 35% 0 45%;
+	border: 2px solid darkgrey;
+}
+
+.personalTip:hover{
+	background-color: darkgrey;
+    color: white;
+}
+
+.personalTip a{
+	text-decoration: none;
+}
+
+/* Set font for contat us form*/
+form label {
+	font-family: sans-serif;
+}
+
+/* Contact form style and positioning*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+input[type=email], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: darkgrey;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: 15px arial, sans-serif;
+    transition-duration: .5s;
+}
+
+input[type=radio] {
+    background-color: white;
+    color: darkgrey;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+    color: white;
+}
+
+footer{
+	background-color: black;
+	margin: 0%;
+	border: 0%;
+}
+
+input[type=number], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+#contact-country{
+	width: 100%;
+	height: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+}
+
+footer h3{
+	color: #ccc;
+	padding: 1%;
+	text-align: center;
+	font: 15px arial, sans-serif;
+	margin: 0px;
+}
+
+#secondary-logo{
+	padding: 0;
+	position: absolute;
+	width: 20%;
+	margin: .5% 40% 2.5% 40%;
+	opacity: .8;
+}
+
+fieldset > legend{
+	font: 22px arial, sans-serif;
+	color: #8c8e91;
+}
+
+h2.let-us-choose{
+	margin-top: 10%;
+}
+
+#let-us-choose-form{
+	color: #8c8e91;
+	transition-duration: .5s;
+	padding: 1%;
+	border-radius: 5px;
+}
+
+#let-us-choose-form fieldset{
+	margin-bottom: 2%;
+}
+
+#let-us-choose-form:hover{
+	box-shadow: 1px 1px 10px black;
+	-webkit-box-shadow: 1px 1px 10px black;
+}
+
+fieldset.personal-info{
+	display: inline-block;
+}
+
+#let-us-choose-form{
+	width: 70%;
+	margin: 1% 15% 2% 15%;
+}
+
+#first-name,
+#last-name{
+	width: 40%;
+}
+
+#email{
+	margin-left: 3.3%;
+	width: 40%;
+}
+
+label.last-name{
+	margin-left: 2%;
+}
+
+#age,
+#country{
+	width: 10%;
+}
+
+label.international,
+input.inHouseOpt,
+input.travelFun{
+	margin-right: 2%;
+}
+
+label.inHouseOpt,
+label.travelFun{
+	font: 15px arial, sans-serif;
+	color: #a8a8a8;
+}
+
+div.inHouseOpt,
+div.travelFun{
+	margin-left: 2%;
+}
+
+.definedDate{
+	width: 15%;
+}
+
+input.startDate,
+input.endDate{
+	display: inline-block;
+	width: 15%;
+	margin-right: 2%;
+}
+
+.redirectionBtn{
+	margin: 2% 40% 2% 40%;
+}
+
+#ourTipsButton,
+#aboutButton{
+	color: #333;
+}
+
+/* JQuery roll to reveal */
+
+.has-scroll-reveal { 
+	opacity: 0; 
+	animation-play-state: paused; 
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Displays mobile navigation */
+@media screen and (max-width: 757px) {
+	
+	.mobileNav{
+		display: block;
+
+	}
+	/* overrides bootstrap style */
+	.mobileNav > .navbar{
+		margin-bottom: 0px;
+	}
+
+	#logo{
+		position: absolute;
+		width: 40%;
+		margin-left: 30%;
+		margin-top: 20%; 
+		float: center;
+	}
+	
+	/* hides navigation bar for desktop */
+	#tableHeader{
+		display: none;
+	}
+}
