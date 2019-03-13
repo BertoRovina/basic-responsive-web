@@ -202,7 +202,7 @@ button{
 .parallax1{
 	height: 100vh;
 	width: 100%;
-	background-image: url("Thailand.jpg");
+	background-image: url("img/Thailand.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -212,7 +212,7 @@ button{
 .parallax2{
 	height: 100vh;
 	width: 100%;
-	background-image: url("parallax1.jpg");
+	background-image: url("img/parallax1.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -227,7 +227,6 @@ button{
 }
 
 /* Form select input style */
-
 .contact-gender > label{
 	margin-right: 5%;
 }
@@ -386,29 +385,8 @@ h2.let-us-choose{
 	margin-top: 10%;
 }
 
-#let-us-choose-form{
-	color: #8c8e91;
-	transition-duration: .5s;
-	padding: 1%;
-	border-radius: 5px;
-}
-
-#let-us-choose-form fieldset{
-	margin-bottom: 2%;
-}
-
-#let-us-choose-form:hover{
-	box-shadow: 1px 1px 10px black;
-	-webkit-box-shadow: 1px 1px 10px black;
-}
-
 fieldset.personal-info{
 	display: inline-block;
-}
-
-#let-us-choose-form{
-	width: 70%;
-	margin: 1% 15% 2% 15%;
 }
 
 #first-name,
@@ -467,6 +445,11 @@ input.endDate{
 	color: #333;
 }
 
+#btn-goback{
+	margin-top: 5%;
+	padding: 0 15% 5% 30%;
+}
+
 /* JQuery roll to reveal */
 
 .has-scroll-reveal { 
@@ -519,11 +502,21 @@ input.endDate{
 		width: 40%;
 		margin-left: 30%;
 		margin-top: 20%; 
-		float: center;
+		/*float: center;*/
 	}
 	
 	/* hides navigation bar for desktop */
 	#tableHeader{
 		display: none;
 	}
+
+	#btn-goback{
+		padding: 0 15% 5% 0%;
+	}
+
+	/* Try it out button style and effect */
+	.personalTip{
+		margin: 0 35% 0 35%;
+	}
+
 }
